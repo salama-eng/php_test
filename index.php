@@ -42,7 +42,7 @@ if(isset($_GET["action"]))
 {
   if($_GET["action"]=="delete")
   {
-    foreach($_SESSION["shopping_cart"] as $keys=>$values)
+    foreach($_SESSION["shopping_cart"] as $key=>$values)
     {
       if($values["item_id"]==$_GET["id"])
       {
